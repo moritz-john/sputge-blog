@@ -8,7 +8,7 @@ tags: ["Apple", "To-Do", "Printer"]
 author: ["Moritz J."]
 showToc: true
 TocOpen: false
-draft: true
+draft: false
 hidemeta: false # Hide date
 comments: false
 # canonicalURL: "https://canonical.url/to/page"
