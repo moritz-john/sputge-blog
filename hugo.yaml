@@ -1,0 +1,81 @@
+baseURL: sputge.com
+languageCode: en-us
+title: Sputge
+copyright: "© 2025 - Moritz J."
+
+# theme: ["hugo-admonitions","PaperMod"]
+
+module:
+  imports:
+    - path: github.com/adityatelange/hugo-PaperMod
+    - path: github.com/KKKZOZ/hugo-admonitions
+
+menu:
+  main:
+    - name: Tags
+      pageRef: /tags
+      weight: 1
+    - name: Archive
+      pageRef: /archives
+      weight: 2
+    - name: About
+      pageRef: /about
+      weight: 3
+    - name: Search
+      pageRef: /search
+      weight: 4
+
+pagination:
+  disableAliases: false
+  pagerSize: 3
+        
+params:
+  # Info on Homepage:
+  homeInfoParams:
+    Title: Welcome to my Blog
+    Content: 
+  # socialIcons: # optional
+  #   - name: "<platform>"
+  #     url: "<link>"
+  #   - name: "<platform 2>"
+  #     url: "<link2>"
+
+  defaultTheme: auto # auto | light | dark
+  DateFormat: "2006-01-02"
+  ShowCodeCopyButtons: true
+  
+  # Post settings:
+  UseHugoToc: true
+  ShowBreadCrumbs: true
+  ShowRssButtonInSectionTermList: true
+  disableShare: false
+  disableHLJS: false
+  hideSummary: false
+  searchHidden: false
+  ShowReadingTime: false
+  ShowPostNavLinks: false
+  ShowWordCount: false
+
+  # editPost:
+  #   URL: "https://github.com/<path_to_repo>/content"
+  #   Text: "Suggest Changes" # edit text
+  #   appendFilePath: true # to append file path to Edit link
+
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    noClasses: false
+    # anchorLineNos: true
+    # codeFences: true
+    # guessSyntax: true
+    # lineNos: true
+    # style: monokai
+    
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON # necessary for search
