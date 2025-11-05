@@ -34,11 +34,9 @@ params:
   homeInfoParams:
     Title: Welcome to my Blog
     Content: 
-  # socialIcons: # optional
-  #   - name: "<platform>"
-  #     url: "<link>"
-  #   - name: "<platform 2>"
-  #     url: "<link2>"
+  socialIcons:
+    - name: "rss"
+      url: "https://sputge.com/index.xml"
 
   defaultTheme: auto # auto | light | dark
   DateFormat: "2006-01-02"
