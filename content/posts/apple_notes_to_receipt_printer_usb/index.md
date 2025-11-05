@@ -14,7 +14,7 @@ comments: false
 # canonicalURL: "https://canonical.url/to/page"
 cover:
   image: "printed_note.jpeg"
-  alt="The final result: a clear, physical to-do list printed from Apple Notes."
+  alt: "The final result: a clear, physical to-do list printed from Apple Notes."
   relative: true
 ---
 

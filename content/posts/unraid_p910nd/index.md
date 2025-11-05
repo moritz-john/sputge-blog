@@ -12,6 +12,10 @@ draft: false
 hidemeta: false # Hide date
 comments: false
 # canonicalURL: "https://canonical.url/to/page"
+cover:
+  image: "cover.png"
+  alt: "p910nd, plus sign, Unraid logo"
+  relative: true
 ---
 
 This guide explains how to install [p910nd](https://github.com/kenyapcomau/p910nd) on your Unraid server, since it’s not available in the Community Apps Store.
