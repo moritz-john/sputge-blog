@@ -27,7 +27,7 @@ menu:
 
 pagination:
   disableAliases: false
-  pagerSize: 3
+  pagerSize: 3 # How many posts are shown on Homepage
         
 params:
   # Info on Homepage:
@@ -38,6 +38,7 @@ params:
     - name: "rss"
       url: "https://sputge.com/index.xml"
 
+  images: ["/images/sputge_logo.png"] # Global Open Graph image
   defaultTheme: auto # auto | light | dark
   DateFormat: "2006-01-02"
   ShowCodeCopyButtons: true
@@ -58,7 +59,6 @@ params:
   #   URL: "https://github.com/<path_to_repo>/content"
   #   Text: "Suggest Changes" # edit text
   #   appendFilePath: true # to append file path to Edit link
-
 
 markup:
   goldmark:
