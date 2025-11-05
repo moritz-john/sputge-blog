@@ -140,12 +140,9 @@ Pipes the converted bytes into `nc` (netcat).
 
 Personally, I am running a small Unraid NAS to which I connected my ESC/POS receipt printer via USB.
 
-{{% details title="A note on 'portable' ESC/POS printers" closed="true" %}}
-
-Be aware that my printer, at least, is sold as a 'portable' unit (which also supports Bluetooth), which means that it has built-in power-saving features. That's all to say that I have to turn on the printer again from time to time.  
-Other units - without a built-in battery - don't have these 'limitations'.
-
-{{% /details %}}
+> [!INFO]- A note on 'portable' ESC/POS printers
+> Be aware that my printer, at least, is sold as a 'portable' unit (which also supports Bluetooth), which means that it has built-in power-saving features. That's all to say that I have to turn on the printer again from time to time.  
+> Other units - without a built-in battery - don't have these 'limitations'.
 
 ### Steps to follow
 
