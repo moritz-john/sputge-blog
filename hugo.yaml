@@ -45,7 +45,6 @@ params:
   ShowCodeCopyButtons: true
   
   # Post settings:
-  UseHugoToc: true
   ShowBreadCrumbs: true
   ShowRssButtonInSectionTermList: true
   disableShare: false
@@ -55,6 +54,7 @@ params:
   ShowReadingTime: false
   ShowPostNavLinks: false
   ShowWordCount: false
+  UseHugoToc: false # true: only shows H1, H2, H3
 
   # editPost:
   #   URL: "https://github.com/<path_to_repo>/content"
