@@ -1,5 +1,5 @@
 ---
-title: "Installing and Using p910nd on Unraid 7.x"
+title: "Install and Use p910nd on Unraid 7.x"
 # description: "Desc Text."
 date: 2025-11-01
 # weight: 2
