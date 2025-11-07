@@ -17,4 +17,5 @@ comments: false
     # caption: "<text>" # display caption under cover
     # relative: true # when using page bundles set this to true
     # hiddenInList: # To hide on list pages and home
+    # hidden: true # Hide on whole website 
 ---
