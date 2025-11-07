@@ -82,7 +82,7 @@ Done.
 - It performs some formatting on the Text input.
 - It prints with `p910nd` via `nc` (netcat), so SSH is not necessary.  
 On the receiving machine [p910nd](https://man.cx/p910nd) is running.
-  - I wrote a [short documentation](/posts/unraid_p910nd) [ WIP] on how to get p910nd up and running on Unraid
+  - I wrote a [short documentation](/posts/unraid_p910nd) on how to get p910nd up and running on Unraid
 
 #### What does it do?
 
