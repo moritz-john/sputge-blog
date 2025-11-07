@@ -2,7 +2,7 @@
 title: "Printing To-Do lists from Apple Notes on a cheap ESC/POS receipt printer"
 # description: "Desc Text."
 date: 2025-11-04
-# weight: 1
+weight: 1
 # aliases: ["/first"]
 tags: ["Apple", "To-Do", "Printer"]
 author: ["Moritz J."]
@@ -82,7 +82,7 @@ Done.
 - It performs some formatting on the Text input.
 - It prints with `p910nd` via `nc` (netcat), so SSH is not necessary.  
 On the receiving machine [p910nd](https://man.cx/p910nd) is running.
-  - I wrote a [short documentation](/docs/unraid/unraid_p910nd) [ WIP] on how to get p910nd up and running on Unraid
+  - I wrote a [short documentation](/posts/unraid_p910nd) [ WIP] on how to get p910nd up and running on Unraid
 
 #### What does it do?
 
