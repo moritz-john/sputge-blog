@@ -1,79 +1,103 @@
-baseURL: sputge.com
-languageCode: en-us
-title: Sputge
-copyright: "© 2025 - Moritz J."
-
-# theme: ["hugo-admonitions","PaperMod"]
-
 module:
   imports:
-    - path: github.com/adityatelange/hugo-PaperMod
     - path: github.com/KKKZOZ/hugo-admonitions
+    - path: github.com/imfing/hextra
 
-menu:
-  main:
-    - name: Tags
-      pageRef: /tags
-      weight: 1
-    - name: Archive
-      pageRef: /archives
-      weight: 2
-    - name: About
-      pageRef: /about
-      weight: 3
-    - name: Search
-      pageRef: /search
-      weight: 4
-
-pagination:
-  disableAliases: false
-  pagerSize: 3 # How many posts are shown on Homepage
-        
-params:
-  # Info on Homepage:
-  homeInfoParams:
-    Title: Welcome to my Blog
-    Content: 
-  socialIcons:
-    - name: "rss"
-      url: "https://sputge.com/index.xml"
-
-  images: ["/images/sputge_logo.png"] # Global Open Graph image
-  defaultTheme: auto # auto | light | dark
-  DateFormat: "2006-01-02"
-  ShowCodeCopyButtons: true
-  
-  # Post settings:
-  ShowBreadCrumbs: true
-  ShowRssButtonInSectionTermList: true
-  disableShare: false
-  disableHLJS: false
-  hideSummary: false
-  searchHidden: false
-  ShowReadingTime: false
-  ShowPostNavLinks: false
-  ShowWordCount: false
-  UseHugoToc: false # true: only shows H1, H2, H3
-
-  # editPost:
-  #   URL: "https://github.com/<path_to_repo>/content"
-  #   Text: "Suggest Changes" # edit text
-  #   appendFilePath: true # to append file path to Edit link
+baseURL: https://sputge.com
+languageCode: en-us
+title: Sputge
 
 markup:
   goldmark:
     renderer:
       unsafe: true
+
+   # enable hextra syntax highlight    
   highlight:
     noClasses: false
-    # anchorLineNos: true
-    # codeFences: true
-    # guessSyntax: true
-    # lineNos: true
-    # style: monokai
-    
+
 outputs:
   home:
     - HTML
     - RSS
-    - JSON # necessary for search
+    - JSON
+
+params:
+  # description: Website description
+
+  navbar:
+    displayTitle: false
+    displayLogo: true
+    logo:
+      path: images/sputge_logo.svg
+      # dark: images/logo-dark.svg
+      link: /
+      width: 120
+      # height: 20
+
+  # Global Open Graph image
+  images: 
+    - "/static/sputg_logo.png" 
+  defaultTheme: auto # auto | light | dark
+  DateFormat: "2006-01-02"
+
+  blog:
+    list:
+      displayTags: true
+      sortBy: date # date | lastmod | publishDate | title | weight
+      sortOrder: desc # or "asc"
+      # Pagination
+      pagerSize: 5
+
+  # Diplay tags below table of content
+  toc:
+    displayTags: true
+
+  # Code blocks
+  highlight:
+    copy:
+      enable: true
+      display: hover # hover | always
+
+  # Adds an arrow icon to external links
+  externalLinkDecoration: true
+
+  search:
+    enable: true
+    type: flexsearch
+    flexsearch:
+      # index page by: content | summary | heading | title
+      index: content
+
+  footer:
+    displayCopyright: true
+    displayPoweredBy: true
+
+menu:
+  main:
+    - identifier: all_posts
+      name: Archive
+      pageRef: /posts
+      params:
+        type: link
+        icon: archive
+      weight: 1
+    - identifier: tags
+      name: Tags
+      pageRef: /tags
+      weight: 2
+      params:
+        type: link
+        icon: tag
+    - name: About
+      pageRef: /about
+      params:
+        type: link
+        icon: information-circle
+      weight: 3
+    - name: Search
+      pageRef: /search
+      weight: 4
+      params:
+        type: search
+
