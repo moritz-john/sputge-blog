@@ -25,6 +25,11 @@ outputs:
 params:
   # description: Website description
 
+# banner:
+#     key: 'announcement-xxx'
+#     message: |
+#       🎉 Welcome!
+
   navbar:
     displayTitle: false
     displayLogo: true
