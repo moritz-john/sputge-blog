@@ -37,7 +37,7 @@ params:
 
   # Global Open Graph image
   images: 
-    - "/static/sputg_logo.png" 
+    - "/images/sputge_logo.png" 
   theme:
     default: dark # auto | light | dark
     displayToggle: false

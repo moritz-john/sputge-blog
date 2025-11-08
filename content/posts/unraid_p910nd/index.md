@@ -12,7 +12,7 @@ tags:
 showToc: true
 params:
   images:
-    - "cover.png"
+    - "/images/og/unraid_p910nd.png"
 ---
 
 This guide explains how to install [p910nd](https://github.com/kenyapcomau/p910nd) on your Unraid server, since it’s not available in the Community Apps Store.

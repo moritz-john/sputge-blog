@@ -13,7 +13,7 @@ tags:
 showToc: true
 params:
   images:
-    - "cover.png"
+    - "/images/og/ha_standing_desk_card.png"
 ---
 
 This quick guide shows how to create a simple [Bubble Card](https://github.com/Clooos/Bubble-Card) for your smart standing desk in Home Assistant.
