@@ -38,7 +38,9 @@ params:
   # Global Open Graph image
   images: 
     - "/static/sputg_logo.png" 
-  defaultTheme: auto # auto | light | dark
+  theme:
+    default: dark # auto | light | dark
+    displayToggle: false
   DateFormat: "2006-01-02"
 
   blog:
