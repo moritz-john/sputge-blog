@@ -117,9 +117,14 @@ menu:
         type: link
         icon: information-circle
       weight: 3
-    - name: Search
-      pageRef: /search
+    - name: RSS
+      url: https://sputge.com/index.xml
       weight: 4
       params:
+        type: link
+        icon: rss
+    - name: Search
+      pageRef: /search
+      weight: 5
+      params:
         type: search
-
