@@ -1,20 +1,19 @@
 ---
 title: "Quick Home Assistant Standing Desk Bubble Card"
 draft: false
-# description: "Desc Text."
 date: 2025-11-06
-# weight: 1
-# aliases: ["/first"]
-tags: ["Home Assistant", "ESPHome", "Standing Desk"]
-author: ["Moritz J."]
+authors:
+  - name: Moritz J.
+    # link: https://github.com/XYZ
+    # image: https://github.com/XYZ
+tags:
+  - ESPHome
+  - Home Assistant
+  - Standing Desk
 showToc: true
-TocOpen: false
-hidemeta: false # Hide date
-comments: false
-cover:
-    image: "cover.png" # image path/url
-    relative: true # when using page bundles set this to true
-    hidden: true
+params:
+  images:
+    - "cover.png"
 ---
 
 This quick guide shows how to create a simple [Bubble Card](https://github.com/Clooos/Bubble-Card) for your smart standing desk in Home Assistant.

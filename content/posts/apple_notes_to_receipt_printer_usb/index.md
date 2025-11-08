@@ -1,22 +1,25 @@
 ---
 title: "Printing To-Do lists from Apple Notes on a cheap ESC/POS receipt printer"
-# description: "Desc Text."
-date: 2025-11-04
-weight: 1
-# aliases: ["/first"]
-tags: ["Apple", "To-Do", "Printer"]
-author: ["Moritz J."]
-showToc: true
-TocOpen: false
 draft: false
-hidemeta: false # Hide date
-comments: false
-# canonicalURL: "https://canonical.url/to/page"
-cover:
-  image: "printed_note.jpeg"
-  alt: "The final result: a clear, physical to-do list printed from Apple Notes."
-  relative: true
+date: 2025-11-04
+authors:
+  - name: Moritz J.
+    # link: https://github.com/XYZ
+    # image: https://github.com/XYZ
+tags:
+  - Apple
+  - To-Do
+  - Printer
+showToc: true
+params:
+  images:
+    - "printed_note.jpeg"
 ---
+
+{{< figure
+  src="printed_note.jpeg"
+  alt="The final result: a receipt to-do list printed from Apple Notes."
+>}}
 
 I decided to buy [a cheap ESC/POS receipt printer](https://aliexpress.com/item/1005006625823799.html) (~25 Euro).  
 My goal was to easily print my Apple Notes To-Do list with it.  
