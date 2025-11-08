@@ -7,20 +7,9 @@ baseURL: https://sputge.com
 languageCode: en-us
 title: Sputge
 
-markup:
-  goldmark:
-    renderer:
-      unsafe: true
-
-   # enable hextra syntax highlight    
-  highlight:
-    noClasses: false
-
-outputs:
-  home:
-    - HTML
-    - RSS
-    - JSON
+services:
+  googleAnalytics:
+    ID: G-TQS9VY86BJ
 
 params:
   # description: Website description
@@ -90,6 +79,21 @@ params:
   footer:
     displayCopyright: true
     displayPoweredBy: true
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+   # enable hextra syntax highlight    
+  highlight:
+    noClasses: false
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
 
 menu:
   main:
