@@ -1,21 +1,18 @@
 ---
 title: "Install and Use p910nd on Unraid 7.x"
-# description: "Desc Text."
-date: 2025-11-01
-# weight: 2
-# aliases: ["/first"]
-tags: ["Unraid", "Printer"]
-author: ["Moritz J."]
-showToc: true
-TocOpen: false
 draft: false
-hidemeta: false # Hide date
-comments: false
-# canonicalURL: "https://canonical.url/to/page"
-cover:
-  image: "cover.png"
-  relative: true
-  hidden: true
+date: 2025-11-01
+authors:
+  - name: Moritz J.
+    # link: https://github.com/XYZ
+    # image: https://github.com/XYZ
+tags:
+  - Printer
+  - Unraid
+showToc: true
+params:
+  images:
+    - "cover.png"
 ---
 
 This guide explains how to install [p910nd](https://github.com/kenyapcomau/p910nd) on your Unraid server, since it’s not available in the Community Apps Store.
