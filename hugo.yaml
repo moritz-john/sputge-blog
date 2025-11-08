@@ -64,6 +64,17 @@ params:
   # Adds an arrow icon to external links
   externalLinkDecoration: true
 
+  comments:
+    enable: true
+    type: giscus
+
+    # https://giscus.app/
+    giscus:
+      repo: moritz-john/giscus
+      repoId: R_kgDOQR2tpw
+      category: sputge.com
+      categoryId: DIC_kwDOQR2tp84CxlGL
+
   search:
     enable: true
     type: flexsearch
