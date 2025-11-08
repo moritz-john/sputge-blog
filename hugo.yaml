@@ -7,104 +7,95 @@ baseURL: https://sputge.com
 languageCode: en-us
 title: Sputge
 
-services:
-  googleAnalytics:
-    ID: G-TQS9VY86BJ
-
+# ==== SITE PARAMETERS ====
 params:
-  # description: Website description
-
-# banner:
-#     key: 'announcement-xxx'
-#     message: |
-#       🎉 Welcome!
+  # ---- THEME & VISUALS ----
+  theme:
+    default: dark                             # auto | light | dark
+    displayToggle: false
+ 
+  images: 
+    - "/images/sputge_logo.png"               # Global Open Graph image
 
   navbar:
     displayTitle: false
     displayLogo: true
     logo:
-      path: images/sputge_logo.svg
+      path: /images/sputge_logo.svg
       # dark: images/logo-dark.svg
       link: /
       width: 120
       # height: 20
 
-  # Global Open Graph image
-  images: 
-    - "/images/sputge_logo.png" 
-  theme:
-    default: dark # auto | light | dark
-    displayToggle: false
-  DateFormat: "2006-01-02"
+  DateFormat: "2006-01-02"                    # https://gohugo.io/functions/time/format/#layout-string
 
+  externalLinkDecoration: true                # Add arrow icon to external links
+
+  footer:
+    displayCopyright: true                    # Change content in /i18n/en.yaml
+    displayPoweredBy: true
+
+  # description: Website description
+
+  # ---- CONTENT PRESENTATION ----
   blog:
     list:
-      displayTags: true
-      sortBy: date # date | lastmod | publishDate | title | weight
-      sortOrder: desc # or "asc"
-      # Pagination
-      pagerSize: 5
+      displayTags: true                       # Show tags under each post
+      sortBy: date                            # date | lastmod | publishDate | title | weight
+      sortOrder: desc                         # desc | asc
+      pagerSize: 5                            # Number of posts per page (pagination)
 
-  # Diplay tags below table of content
   toc:
-    displayTags: true
+    displayTags: true                         # Diplay tags below table of content
 
-  # Code blocks
-  highlight:
+  highlight:                                  # Code blocks
     copy:
-      enable: true
-      display: hover # hover | always
+      enable: true                            
+      display: hover                          # hover | always
 
-  # Adds an arrow icon to external links
-  externalLinkDecoration: true
-
+  # ---- GISCUS (COMMENTS) ----
   comments:
     enable: true
     type: giscus
 
-    # https://giscus.app/
-    giscus:
+    giscus:                                   # https://giscus.app/
       repo: moritz-john/giscus
       repoId: R_kgDOQR2tpw
       category: sputge.com
       categoryId: DIC_kwDOQR2tp84CxlGL
 
+  # ---- SEARCH ----
   search:
     enable: true
     type: flexsearch
     flexsearch:
-      # index page by: content | summary | heading | title
-      index: content
+    index: content                            # index page by: content | summary | heading | title
 
-  footer:
-    displayCopyright: true
-    displayPoweredBy: true
-
+# ==== MARKUP SETTINGS ====
 markup:
   goldmark:
     renderer:
       unsafe: true
 
-   # enable hextra syntax highlight    
-  highlight:
+  highlight:                                  # enable Hextra syntax highlight
     noClasses: false
 
+# ==== OUTPUT FORMATS ==== 
 outputs:
   home:
     - HTML
     - RSS
 
+# ==== MENU CONFIGURATION ====
 menu:
   main:
-    - identifier: all_posts
-      name: Archive
+    - name: Archive
       pageRef: /posts
       params:
         type: link
         icon: archive
       weight: 1
-    - identifier: tags
-      name: Tags
+    - name: Tags
       pageRef: /tags
       weight: 2
       params:
@@ -127,3 +118,8 @@ menu:
       weight: 5
       params:
         type: search
+
+# ==== Google Analytics ====
+services:
+  googleAnalytics:
+    ID: G-TQS9VY86BJ
