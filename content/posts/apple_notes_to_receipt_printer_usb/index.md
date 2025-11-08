@@ -13,7 +13,7 @@ tags:
 showToc: true
 params:
   images:
-    - "printed_note.jpeg"
+    - "/images/og/apple_notes_to_receipt_printer_usb.png"
 ---
 
 {{< figure
