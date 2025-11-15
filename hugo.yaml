@@ -13,7 +13,10 @@ params:
   theme:
     default: dark                             # auto | light | dark
     displayToggle: false
- 
+
+  page:
+    width: wide                               # full (100%) | wide (90rem) | normal (1280px)
+
   images: 
     - "/images/sputge_logo.png"               # Global Open Graph image
 
