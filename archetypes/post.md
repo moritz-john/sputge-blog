@@ -10,6 +10,7 @@ tags:
   - Tag1
   - Tag2
 showToc: true
+breadcrumbs: false
 params:
   images:
     - "/images/og/og_image_name.png"

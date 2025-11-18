@@ -10,6 +10,7 @@ tags:
   - Printer
   - Unraid
 showToc: true
+breadcrumbs: false
 params:
   images:
     - "/images/og/unraid_p910nd.png"

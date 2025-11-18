@@ -11,6 +11,7 @@ tags:
   - Home Assistant
   - Standing Desk
 showToc: true
+breadcrumbs: false
 params:
   images:
     - "/images/og/ha_standing_desk_card.png"

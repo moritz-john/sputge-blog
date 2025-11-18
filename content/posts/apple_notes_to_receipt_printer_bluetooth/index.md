@@ -12,6 +12,7 @@ tags:
   - To-Do
   - Printer
 showToc: true
+breadcrumbs: false
 params:
   images:
     - "/images/og/apple_notes_to_receipt_printer_bluetooth.png"
