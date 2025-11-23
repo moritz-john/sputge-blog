@@ -1,7 +1,7 @@
 ---
-title: "Printing To-Do lists from Apple Notes on a cheap ESC/POS receipt printer"
+title: "📌 Printing To-Do lists from Apple Notes on a cheap ESC/POS receipt printer"
 draft: false
-date: 2025-11-04
+# date: 2025-11-04
 authors:
   - name: Moritz J.
     # link: https://github.com/XYZ
