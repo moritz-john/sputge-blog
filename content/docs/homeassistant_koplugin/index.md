@@ -45,7 +45,7 @@ Edit the Home Assistant connection settings:
 
 ```lua {filename="config.lua"}
 -- Home Assistant connection settings
-host = "192.168.1.10", -- Change to your Home Assistant IP Address
+host = "192.168.1.10",  -- Change to your Home Assistant IP Address
 port = 8123,            -- Default Home Assistant Port
 token =                 -- Change to your own Long-Lived Access Token
 "PasteYourHomeAssistantLong-LivedAccessTokenHere",
