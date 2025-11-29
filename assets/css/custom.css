@@ -8,6 +8,11 @@ html {
   font-size: 1.125rem;
 }
 
+.content table {
+  font-size: 1.125rem;
+  line-height: 1.8;
+}
+
 /* Increase navbar link font size */
 .hextra-nav-container a {
   font-size: 1rem;
