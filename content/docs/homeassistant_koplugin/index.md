@@ -3,7 +3,7 @@ breadcrumbs: true
 title: "homeassistant.koplugin"
 ---
 
-> Documentation for {{< icon "github" >}} https://github.com/moritz-john/homeassistant.koplugin
+Documentation for {{< icon "github" >}} https://github.com/moritz-john/homeassistant.koplugin
 
 <br>
 
@@ -24,19 +24,17 @@ This [KOReader](https://koreader.rocks/) plugin lets you control Home Assistant 
 
 ## Features
 
-- Control an unlimited number of Home Assistant entities from KOReader.
-- Support for basic actions like `light.turn_on`, `switch.toggle` or `fan.turn_on`
-- Lightweight, non-intrusive interface while reading your book.
-- Simple, editable configuration file.  
-- Success and error notifications.
+- Control any number of Home Assistant entities from KOReader  
+- Basic service support (e.g. `light/turn_on`, `switch/toggle`, `fan/turn_on`)  
+- Lightweight, unobtrusive interface  
+- Simple text-based configuration  
+- Success/error notifications
 
 ## Installation & Configuration:
 ### 1. Download the Plugin
 
-Download the latest release from the plugin repository:  
-https://github.com/moritz-john/homeassistant.koplugin/releases
-
-Unpack `homeassistant.koplugin.zip`
+Download the latest release and unpack `homeassistant.koplugin.zip`:  
+{{< icon "github" >}} https://github.com/moritz-john/homeassistant.koplugin/releases
 
 ### 2. Edit `config.lua`
 #### 2.1 Change Connection Settings
@@ -51,9 +49,9 @@ token =                 -- Change to your own Long-Lived Access Token
 "PasteYourHomeAssistantLong-LivedAccessTokenHere",
 ```
 
->[!important]- Long-Lived Access Token
-> You can create a Long-Lived Access Token here:    
-> **Home Assistant**: *Profile → Security (scroll down) → Long-lived access tokens → Create token*  
+>[!important] Long-Lived Access Token
+> Create one under:   
+> [**Home Assistant**](https://my.home-assistant.io/redirect/profile): *Profile → Security (scroll down) → Long-lived access tokens → Create token*  
 > _Copy the token now - you won’t be able to view it again._
 
 #### 2.2 Add your own Home Assistant Entities
@@ -63,20 +61,22 @@ For each entity you want to control, add an entry with:
 ```
 {
 id = "light.example"         → Home Assistant Entity ID
-service = "light/toggle"     → Domain specific service to execute
-label = "Light Example"      → Optional menu label
+service = "light/toggle"     → Domain-specific service to call
+label = "Light Example"      → Optional text label
 },
 ```
 
 >[!warning]
-> Make sure that you use the **service** syntax: e.g. `light/turn_on` and **not** the action syntax ~~`light.turn_on`~~ in `config.lua`.
+> Use the **service** format `light/turn_on`.  
+> Do not use automation-style **action** syntax ~~`light.turn_on`~~.
 
-
+Example entries for Home Assistant entities in `config.lua`.  
+Be aware of indentations `{}` and `,` otherwise you will get syntax errors.
 ```lua {filename="config.lua"}
 {
-    id = "light.reading_lamp",      -- Home Assistant Entity ID
-    service = "light/toggle",       -- <domain>/<service>
-    label = "Toggle: Reading Lamp", -- Optional: custom menu label
+    id = "light.reading_lamp",
+    service = "light/toggle",   
+    label = "Toggle: Reading Lamp",
 },
 {
     id = "light.all_lights",
@@ -96,8 +96,8 @@ label = "Light Example"      → Optional menu label
 [...]
 ```
 
->[!Info]- Optional menu `label`
-> If you leave the **label** field empty, the submenu entry for that entity will look like this:  
+>[!Info]- Behavior with empty `label`
+> If you leave the `label` field empty, the submenu entry for that entity will look like this:  
 > `<id> → <(service)>`  
 {{< figure
   src="empty_label.png"
@@ -106,8 +106,7 @@ label = "Light Example"      → Optional menu label
 >}} 
 
 #### Example Actions & Services
-Here is a list of common **Entity Types**, their [**Actions**](https://www.home-assistant.io/docs/scripts/perform-actions/) and [**Services**](https://data.home-assistant.io/docs/services/).  
-You can use it to complete your `config.lua` file.
+Here are common Home Assistant services you can use in `config.lua`:
 
 | Entity Type      | Action Name                                              | Corresponding Service                                          | Example Entity ID          |
 | :--------------- | :------------------------------------------------------- | :------------------------------------------------------------- | :------------------------- |
@@ -118,20 +117,19 @@ You can use it to complete your `config.lua` file.
 | **Automation**   | automation.trigger                                       | `automation/trigger`                                           | automation.bed_routine     |
 | **Input Button** | input_button.press                                       | `input_button/press`                                           | input_button.wake_computer |
 
->[!Info] Actions & \<domain>\/\<service>
-> **homeassistant.koplugin** supports _basic_ actions.   
-> e.g.: action [light.turn_on](https://www.home-assistant.io/integrations/light/#action-lightturn_on) will be translated to the service API call `/api/services/light/turn_on`.  
-> Adding an optional data attribute like `rgb_color` is not supported
+>[!Note] 
+> Only _basic_ services are supported.  
+> Additional service data (e.g. `rgb_color`) is not.
 
 ### 3. Copy files
-After editing `config.lua` copy the whole `homeassistant.koplugin` folder into `koreader/plugins/`.
+After editing `config.lua` copy the entire `homeassistant.koplugin` folder into `koreader/plugins/`.
 
 ### 4. Restart KOReader
-Access the plugin under **Tools → Page 2 → Home Assistant**.
+The plugin appears under **Tools → Page 2 → Home Assistant**.
 
 ## Requirements
 - KOReader (tested with: 2025.10 "Ghost" on a Kindle Basic 2024)  
-- Home Assistant & Long-Lived Access Token
+- Home Assistant & a Long-Lived Access Token
 - HTTP access (HTTPS currently not supported)
 
 ## Screenshots
