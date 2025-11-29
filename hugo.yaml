@@ -104,21 +104,27 @@ menu:
       params:
         type: link
         icon: tag
+    - name: Docs
+      pageRef: /docs
+      params:
+        type: link
+        icon: book-open
+      weight: 3
     - name: About
       pageRef: /about
       params:
         type: link
         icon: information-circle
-      weight: 3
+      weight: 4
     - name: RSS
       url: https://sputge.com/index.xml
-      weight: 4
+      weight: 5
       params:
         type: link
         icon: rss
     - name: Search
       pageRef: /search
-      weight: 5
+      weight: 6
       params:
         type: search
 
