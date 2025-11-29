@@ -3,12 +3,12 @@ breadcrumbs: true
 title: "homeassistant.koplugin"
 ---
 
-Documentation for {{< icon "github" >}} https://github.com/moritz-john/homeassistant.koplugin
+Documentation for {{< icon "github" >}} [homeassistant.koplugin](https://github.com/moritz-john/homeassistant.koplugin)
 
 <br>
 
 <div style="text-align: center;">
-  <a href="#installation--configuration" style="font-size: 28px;">Jump to the installation instructions</a>
+  <a href="#installation--configuration" style="font-size: 24px;">Jump to the installation instructions</a>
 </div>
 
 
@@ -71,7 +71,7 @@ label = "Light Example"      → Optional text label
 > Do not use automation-style **action** syntax ~~`light.turn_on`~~.
 
 Example entries for Home Assistant entities in `config.lua`.  
-Be aware of indentations `{}` and `,` otherwise you will get syntax errors.
+Be aware of proper indentations, `{}` and `,` otherwise you will get syntax errors.
 ```lua {filename="config.lua"}
 {
     id = "light.reading_lamp",
