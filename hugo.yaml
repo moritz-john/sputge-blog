@@ -14,6 +14,10 @@ params:
     default: dark                             # auto | light | dark
     displayToggle: false
 
+  banner:                                     
+    key: "announcement"
+    message: 🎉 I just released a [KOReader Plugin](/docs/homeassistant_koplugin/) that lets you control Home Assistant entities!
+
   page:
     width: wide                               # full (100%) | wide (90rem) | normal (1280px)
 
