@@ -3,8 +3,6 @@ breadcrumbs: true
 title: "homeassistant.koplugin"
 ---
 
-Documentation for {{< icon "github" >}} [homeassistant.koplugin](https://github.com/moritz-john/homeassistant.koplugin)
-
 <br>
 
 <div style="text-align: center;">
@@ -24,7 +22,7 @@ This [KOReader](https://koreader.rocks/) plugin lets you control Home Assistant 
 
 ## Features
 
-- Control any number of Home Assistant entities from KOReader  
+- Control any number of Home Assistant entities from KOReader 
 - Basic service support (e.g. `light/turn_on`, `switch/toggle`, `fan/turn_on`)  
 - Lightweight, unobtrusive interface  
 - Simple text-based configuration  
@@ -156,7 +154,12 @@ The plugin appears under **Tools → Page 2 → Home Assistant**.
 >}} 
 
 
+## Links
+[homeassistant.koplugin Repository](https://github.com/moritz-john/homeassistant.koplugin)  
+[KOReader Website](https://koreader.rocks/)
 
-
+[Home Assistant REST API](https://developers.home-assistant.io/docs/api/rest/)  
+[Home Assistant Services](https://data.home-assistant.io/docs/services/)  
+[Home Assistant Performing Actions](https://www.home-assistant.io/docs/scripts/perform-actions/)
 
 
