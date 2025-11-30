@@ -6,15 +6,14 @@ params:
     - "/images/og/homeassistant_koplugin.png"
 ---
 
+This [KOReader](https://koreader.rocks/) plugin lets you control Home Assistant entities without leaving your current book!
+
+<!--more-->
 <br>
 
 <div style="text-align: center;">
   <a href="#installation--configuration" style="font-size: 24px;">Jump to the installation instructions</a>
 </div>
-
-
-## Use case 
-This [KOReader](https://koreader.rocks/) plugin lets you control Home Assistant entities without leaving your current book!
 
 {{< figure
   src="homeassistant_koreader.gif"
@@ -161,8 +160,8 @@ The plugin appears under **Tools → Page 2 → Home Assistant**.
 [homeassistant.koplugin Repository](https://github.com/moritz-john/homeassistant.koplugin)  
 [KOReader Website](https://koreader.rocks/)
 
-[Home Assistant REST API](https://developers.home-assistant.io/docs/api/rest/)  
-[Home Assistant Services](https://data.home-assistant.io/docs/services/)  
-[Home Assistant Performing Actions](https://www.home-assistant.io/docs/scripts/perform-actions/)
+[Home Assistant: REST API](https://developers.home-assistant.io/docs/api/rest/)  
+[Home Assistant: Services](https://data.home-assistant.io/docs/services/)  
+[Home Assistant: Performing actions](https://www.home-assistant.io/docs/scripts/perform-actions/)
 
 
