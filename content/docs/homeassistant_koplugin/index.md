@@ -1,6 +1,9 @@
 ---
 breadcrumbs: true
 title: "homeassistant.koplugin"
+params:
+  images:
+    - "/images/og/homeassistant_koplugin.png"
 ---
 
 <br>
