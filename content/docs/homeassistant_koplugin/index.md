@@ -125,7 +125,36 @@ Here are common Home Assistant services you can use in `config.lua`:
 After editing `config.lua` copy the entire `homeassistant.koplugin` folder into `koreader/plugins/`.
 
 ### 4. Restart KOReader
-The plugin appears under **Tools → Page 2 → Home Assistant**.
+The plugin appears under **Tools → Page 2 → Home Assistant**.    
+or use gestures.
+
+## KOReader Gestures
+You can trigger your Home Assistant entities directly through KOReader gestures.  
+Each gesture can be assigned to any entity you have configured in `config.lua`.
+
+For any chosen gesture, you will find your entities in  
+**General▸ → Pages 1–X [find your Home Assistant entity]**  
+The actions will be named after your entity `label`.
+
+A complete gesture example:  
+**Settings → Taps and gestures → Gesture manager▸**  
+**Long-press on corner▸ → Bottom Left → General▸ → Page 1–X: Toggle: Reading Lamp**
+
+### QuickMenu
+
+The simplest way to access your Home Assistant entities is through a [QuickMenu](https://koreader.rocks/user_guide/#L2-quickmenu).
+
+Add as many entities as you want to a gesture (e.g. **Long-press on corner▸ → Bottom Left**)  
+and then select **Show as QuickMenu** in **Long-press on corner▸ → Bottom Left → Page 2**.
+
+The result looks like this:
+
+{{< figure
+  src="homeassistant_koplugin_gesture_quick_menu.gif"
+  caption="homeassistant.koplugin used in a QuickMenu"
+  width="80%"
+  align=center
+>}}
 
 ## Requirements
 - KOReader (tested with: 2025.10 "Ghost" on a Kindle Basic 2024)  
