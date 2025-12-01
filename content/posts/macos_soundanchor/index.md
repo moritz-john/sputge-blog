@@ -1,5 +1,5 @@
 ---
-title: "macOS: automatic Audio Input and Ouput selection"
+title: "macOS: automatic Audio Input and Output selection"
 draft: false
 date: 2025-11-23
 authors:
