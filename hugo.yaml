@@ -16,7 +16,7 @@ params:
 
   banner:                                     
     key: "announcement"
-    message: 🎉 I just released a [KOReader Plugin](/docs/homeassistant_koplugin/) that lets you control Home Assistant entities!
+    message: 🎉 I just released a [KOReader Plugin](https://github.com/moritz-john/homeassistant.koplugin) that lets you control Home Assistant entities!
 
   page:
     width: wide                               # full (100%) | wide (90rem) | normal (1280px)
@@ -108,12 +108,12 @@ menu:
       params:
         type: link
         icon: tag
-    - name: Docs
-      pageRef: /docs
-      params:
-        type: link
-        icon: book-open
-      weight: 3
+    # - name: Docs
+    #   pageRef: /docs
+    #   params:
+    #     type: link
+    #     icon: book-open
+    #   weight: 3
     - name: About
       pageRef: /about
       params:
