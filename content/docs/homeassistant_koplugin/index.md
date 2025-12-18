@@ -6,6 +6,11 @@ params:
     - "/images/og/homeassistant_koplugin.png"
 ---
 
+>[!info]
+>
+> Since **v2.0.0**, the documentation moved back to GitHub, so that everything is in one place:  
+> https://github.com/moritz-john/homeassistant.koplugin#homeassistantkoplugin
+
 This [KOReader](https://koreader.rocks/) plugin lets you control Home Assistant entities without leaving your current book!
 
 <!--more-->
